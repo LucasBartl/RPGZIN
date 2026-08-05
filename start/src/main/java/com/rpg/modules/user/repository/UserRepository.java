@@ -10,4 +10,5 @@ import com.rpg.modules.user.entity.UserEntity;
 public interface UserRepository  extends JpaRepository<UserEntity,UUID >{
     Optional<UserEntity>findByUsernameOrEmail(String username, String email);
     Optional<UserEntity>findByUsername(String username);
+    Optional<UserEntity>findById(UUID id);
 }
