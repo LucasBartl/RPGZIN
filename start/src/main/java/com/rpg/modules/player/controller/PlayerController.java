@@ -1,4 +1,4 @@
-package com.rpg.modules.character.controller;
+package com.rpg.modules.player.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 @RequestMapping("/character")
-public class CharacterController {
+public class PlayerController {
 
     @PostMapping("/create")
     public String postMethodName(@RequestBody String entity) {
